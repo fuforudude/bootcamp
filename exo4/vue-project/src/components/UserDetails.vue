@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref, computed, watchEffect } from 'vue';
 import { useUserStore } from '@/stores/userStore';
-import { useUsers } from '@/composables/useUsers';
 import type { User } from '@/composables/useUsers';
 
 const props = defineProps<{ userId?: string }>();

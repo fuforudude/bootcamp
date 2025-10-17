@@ -47,10 +47,12 @@ const utilisateursFiltres = computed(() => {
   if (!recherche.value) return []
   
   const termesRecherche = recherche.value.toLowerCase()
-  return listeUtilisateurs.value.filter(utilisateur => 
-    utilisateur.username.toLowerCase().includes(termesRecherche) || 
-    utilisateur.email.toLowerCase().includes(termesRecherche)
-  )
+  return listeUtilisateurs.value 
+    ? listeUtilisateurs.value.filter(utilisateur => 
+        utilisateur.username.toLowerCase().includes(termesRecherche) || 
+        utilisateur.email.toLowerCase().includes(termesRecherche)
+      )
+    : []
 })
 </script>
 

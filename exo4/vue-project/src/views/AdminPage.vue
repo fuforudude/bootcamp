@@ -26,7 +26,7 @@
         <button @click="supprimerUtilisateur(utilisateur._id)">Supprimer</button>
       </div>
 
-      <p v-if="listeUtilisateurs.length === 0">Aucun utilisateur</p>
+      <p v-if="(listeUtilisateurs?.length ?? 0) === 0">Aucun utilisateur</p>
     </div>
   </div>
 </template>

@@ -23,7 +23,7 @@ export const authService = {
             const response = await api.get('/auth/me');
             return response.data;
         }else{
-            // no token available
+            console.log('ça marche pas (authServices l 26)')
         }
     },
 
