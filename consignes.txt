@@ -1,0 +1,81 @@
+Exercice 3 - nodejs 
+
+Gestion d’utilisateurs Bootcamp js KENAN DUFRENE
+2025-2026 - Sup de vinci - rennes
+objectifs :
+Tu vas créer un vrai back-end d’authentification pour ton application Vue.js. 
+ Il s’agit d’une API REST construite avec Node.js + Express, connectée à une base de
+données (au choix : MongoDB ou SQL), organisée selon une architecture N-tiers, avec une
+gestion des erreurs propre et centralisée, et une authentification sécurisée via JWT.
+Consignes :
+À faire :
+
+POST /auth/register → créer un utilisateur (hashé, email unique)
+
+POST /auth/login → connecter, retourner un JWT
+
+GET /me → récupérer l'utilisateur connecté
+
+GET /users → liste des utilisateurs
+
+GET /users/:id → détails d’un utilisateur
+
+PUT /users/:id → modifier un utilisateur
+
+DELETE /users/:id → supprimer un utilisateur
+gestion des erreurs :
+Renvoie une erreur claire (http code + message + code applicatif)
+
+Cas à gérer :
+
+Email déjà utilisé
+
+Mauvais identifiants
+
+JWT manquant ou invalide
+
+Utilisateur non trouvé
+
+Données invalides
+kenan.dufrene@neeft.fr
+Kenan DUFRENE
+Exercice 4 - fullstack
+
+Gestion d’utilisateurs Bootcamp js KENAN DUFRENE
+2025-2026 - Sup de vinci - rennes
+objectifs :
+Connecter le front Vue.js (exercice 2) à l’API Node.js (exercice 3) :
+
+Authentification utilisateur via JWT
+
+Affichage dynamique des utilisateurs depuis la base
+
+Gestion de session côté front
+
+Appels API sécurisés
+Consignes :
+À faire :
+
+Connexion / Inscription
+
+Formulaire login + register
+
+À la connexion, récupérer le JWT et le stocker côté client (utiliser nuxt auth)
+
+Afficher les erreurs renvoyées par l’API
+
+
+Utilisation du token JWT
+
+Ajouter automatiquement le token dans les headers pour chaque appel API
+
+
+Récupération du profil connecté
+
+Appeler GET /me pour afficher les infos du user connecté (stocker en store) 
+
+Affichage dynamique des utilisateurs
+
+Afficher la liste des utilisateurs via GET /users
+
+Boutons supprimer / modifier doivent appeler le back
